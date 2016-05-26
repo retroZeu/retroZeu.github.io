@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Home | Jesse Cox Hub Site -->
+<html>
+  <head>
+    <title>Home | Jesse Cox</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://yt3.ggpht.com/-Jr7abEvCec0/AAAAAAAAAAI/AAAAAAAAAAA/A-vSfpJHN3I/s900-c-k-no-rj-c0xffffff/photo.jpg">
+    <script>
+      function banner() { // RANDOM BANNER PER REFRESH
+        var imgs = [
+          "jessuary.png", "februyesse.png", "marche.png", "j-pril.png",
+          "j(may).png", "junesse.png", "jessly.png", "coxgust.png",
+          "coxtember.png", "coxtober.png", "coxvember.png", "coxtember.png"
+        ];
+        var randomImg = Math.floor(Math.random()*(imgs.length));
+        document.getElementById("banner").src = imgs[randomImg];
+      }
+      window.onload = banner;
+    </script>
+    <link href="JCstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img alt="Jesse Cox Banner" class="imgcenter" id="banner">
+    <ul> <!-- NAVIGATION BAR -->
+      <li><a class="active" href="JCHome.html">Home</a></li>
+      <li><a href="JCabout.html">About</a></li>
+      <li class="dropdown"> <!-- Podcasts -->
+        <a href="JCpodcasts.html" class="dropbtn">Podcasts</a>
+        <div class="dropdown-content">
+          <a href="../cooptionalpodcastHTML/COPhome.html" target="_blank">Co-Optional Podcast</a>
+          <a href="https://soundcloud.com/coxncrendor" target="_blank">Cox n' Crendor</a>
+        </div>
+      </li>
+      <li><a href="http://coxcon.co.uk" target="_blank">CoxCon</a></li>
+      <li class="dropdown"> <!-- Links -->
+        <a href="JClink.html" class="dropbtn">Links</a>
+        <div class="dropdown-content">
+          <a href="http://youtube.com/user/OMFGcata" target="_blank">Youtube</a>
+          <a href="http://twitch.tv/ShaBooZey" target="_blank">Twitch</a>
+          <a href="http://twitter.com/JesseCox" target="_blank">Twitter</a>
+        </div>
+      </li>
+    </ul>
+    <h1 class="trebuchet" style="text-align: center;"><b>WELCOME</b></h1>
+    <div class="container"> <!-- TWITCH.TV PLAYER -->
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        src="http://player.twitch.tv/?channel=shaboozey"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen="true">
+      </iframe>
+      </div>
+    </div>
+  </body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link href="COPstyle.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

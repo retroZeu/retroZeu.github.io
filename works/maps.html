@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var myCenter = new google.maps.LatLng(34.1161,-118.1503)
+        var mapProp = {
+          center: myCenter,
+          zoom:15,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var marker = new google.maps.Marker(
+          {
+            position: myCenter
+          }
+        );
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <style>
+      #googleMap {
+        margin: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px;
+      }
+      h3 {
+        font: normal 16px/45px "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        background-color: gray;
+        color: white;
+      }
+      hr {
+        width: 50%;
+        border-top: 1px dashed #8c8b8b;
+      }
+      body {
+        background: url(http://www.foothillgoldline.org/images/sized/images/uploads/files/SouthPasadena-Art-467x348.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="googleMap" style="width:500px;height:380px;"></div>
+    <hr>
+    <h3>The City of South Pasadena</h3>
+  </body>
+
+</html>

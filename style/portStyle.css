@@ -1,0 +1,92 @@
+/* ------STYLE FOR PORTFOLIO------ */
+/* NAVIGATION AND DROPDOWN MENU */
+ul {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  list-style: none;
+  margin-left: 0px;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 3px;
+  float: right;
+}
+li a, .dropbtn {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: small;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgrey;
+  transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -webkit-transition: background .15s ease-in-out;
+}
+.active {
+  color: red;
+}
+/* DROPDOWN MENU */
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: small;
+}
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* TEXT STYLING */
+@font-face {
+    font-family: "Raleway";
+    src: url("../ralwayFont/Raleway-Thin.ttf");
+}
+.nonP {
+  font-family: Raleway,sans-serif;
+}  
+.h {
+  letter-spacing: .08em;
+  font-size: 1.17em;
+}
+.h2 {
+  letter-spacing: .08em;
+  font-size: 1.1em;
+}
+.txt {
+  font-family: Raleway, sans-serif;
+  line-height: 1.25em;
+  font-size: 14.5px;
+}
+/* EXTRA */
+body {
+  background-color: white;
+}
+hr.category {
+  width: 50%;
+  border-top: 1px dashed #8c8b8b;
+}
