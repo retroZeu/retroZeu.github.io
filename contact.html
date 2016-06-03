@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact - Zeu Capua</title>
+    <link href="../style/portStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/portContactStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/portWorkStyle.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,100,100italic' rel='stylesheet' type='text/css'>
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <ul class="nonP"> <!-- NAVIGATION BAR -->
+      <li><a class="active" href="contact.html">CONTACT</a></li>
+      <li class="dropdown"> <!--Browse-->
+        <a href="../index.html" class="dropbtn">WORK</a>
+        <div class="dropdown-content">
+          <a href="workFree.html">As Freelance</a>
+          <a href="workStu.html">As Student</a>
+        </div>
+      </li>
+    </ul>
+    <hr>
+    <br>
+
+    <div style="float:left;">
+      <img class="portrait" src="../images/contact/mePortrait.jpg" alt="Zeu Capua" />
+      <div class="socMed"> <!-- ICONS BY FREEPIK ON FLATICON.CPM -->
+        <a href="http://twitter.com/retrozeu" target="_blank">
+          <div class="bord crossfd">
+            <img src="../images/contact/socMed/twDark.png"></img>
+          </div>
+        </a>
+        <a href="http://facebook.com" target="_blank">
+          <div class="bord crossfd2">
+            <img src="../images/contact/socMed/fbDark.png"></img>
+          </div>
+        </a>
+        <a href="http://linkedin.com" target="_blank">
+          <div class="bord crossfd3">
+            <img src="../images/contact/socMed/inDark.png"></img>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="pDiv">
+      <p class="nonP h">ABOUT</p>
+      <p class="txt">
+        My name is Zeu and I'm a freelance programmer and designer, originally from the Philippines.
+        I am currently a student at South Pasadena High School.
+      </p>
+      <p class="txt">
+        My focus is on designing games, applications, and websites.
+        Though my experience is limited, I'm willing to learn more about the fields mentioned above
+        to help people bring quality work based on their needs.
+      </p>
+      <p class="txt">
+        If you're interested, please use the form below.
+      </p>
+      <br>
+      <hr>
+      <br>
+    </div>
+
+    <div class="form" style="padding-top:10px;"> <!--FORM-->
+      <form action="https://formspree.io/zeucapua@gmail.com" method="POST">
+        <div>
+          <div>
+            <div class="next">
+              <input class="input" type="text" name="name" placeholder="Name">
+            </div>
+            <div class="next">
+              <input class="input" type="email" name="_replyto" placeholder="Email">
+            </div>
+          </div>
+          <br>
+          <div>
+            <input class="input" style="width: 397px;" name="_subject" placeholder="Subject">
+          </div>
+          <br>
+          <div>
+            <textarea name="message" class="input" placeholder="Message"></textarea>
+          </div>
+          <div>
+            <input class="button" type="submit" value="Send">
+          </div>
+          <br>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
