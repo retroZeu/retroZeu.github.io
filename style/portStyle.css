@@ -62,13 +62,9 @@ li.dropdown {
   display: block;
 }
 /* TEXT STYLING */
-@font-face {
-    font-family: "Raleway";
-    src: url("../ralwayFont/Raleway-Thin.ttf");
-}
 .nonP {
-  font-family: Raleway,sans-serif;
-}  
+  font-family: 'Roboto', sans-serif;
+}
 .h {
   letter-spacing: .08em;
   font-size: 1.17em;
@@ -78,7 +74,7 @@ li.dropdown {
   font-size: 1.1em;
 }
 .txt {
-  font-family: Raleway, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.25em;
   font-size: 14.5px;
 }

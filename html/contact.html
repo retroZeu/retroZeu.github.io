@@ -4,6 +4,8 @@
     <title>Contact - Zeu Capua</title>
     <link href="../style/portStyle.css" rel="stylesheet" type="text/css"/>
     <link href="../style/portContactStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/portWorkStyle.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700,700italic,100,100italic' rel='stylesheet' type='text/css'>
     <script>
 
     </script>
@@ -61,17 +63,30 @@
       <br>
     </div>
 
-    <div style="padding-top:10px;"> <!--FORM-->
+    <div class="form" style="padding-top:10px;"> <!--FORM-->
       <form action="https://formspree.io/zeucapua@gmail.com" method="POST">
-        <div class="next">
-          <label>NAME</label>
-          <input class="input" type="text" name="name">
+        <div>
+          <div>
+            <div class="next">
+              <input class="input" type="text" name="name" placeholder="Name">
+            </div>
+            <div class="next">
+              <input class="input" type="email" name="_replyto" placeholder="Email">
+            </div>
+          </div>
+          <br>
+          <div>
+            <input class="input" style="width: 397px;" type="_subject" placeholder="Subject">
+          </div>
+          <br>
+          <div>
+            <textarea name="message" class="input" placeholder="Message"></textarea>
+          </div>
+          <div>
+            <input class="button" type="submit" value="Send">
+          </div>
+          <br>
         </div>
-        <div class="next">
-          <label>EMAIL</label>
-          <input class="input" type="email" name="_replyto">
-        </div>
-        <input type="submit" value="Send">
       </form>
     </div>
   </body>
